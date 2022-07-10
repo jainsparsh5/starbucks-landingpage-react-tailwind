@@ -9,10 +9,11 @@ import { BrowserRouter as Router , Routes , Route} from 'react-router-dom';
 
 function App() {
   return (
-    <main>
-    <NavBar />
+    <div>
     <Router>
+    <NavBar />
       <Routes>
+      
       <Route path='/' element={<Hero />}></Route>
       <Route path='/signup' element={<AuthProvider>
                                         <Container className='d-flex align-items-center justify-content-center' style={{ minHeight: "100vh" }}>
@@ -21,11 +22,13 @@ function App() {
                                           </div>
                                         </Container>
                                       </AuthProvider>}>
+
       </Route>
+      
       </Routes>
+      <Footer />
     </Router>
-    <Footer />
-    </main>
+    </div>
   );
 }
 

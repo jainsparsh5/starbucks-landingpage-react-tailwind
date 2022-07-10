@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <div>
@@ -18,17 +18,21 @@ function NavBar() {
         </div>
         <div className="hidden lg:inline-flex">
           <ul className="flex flex-row font-bold text-sm items-center">
-            <li className="px-2"><i class="fa-solid fa-location-dot"></i></li>
+            <li className="px-2">
+              <i class="fa-solid fa-location-dot"></i>
+            </li>
             <li className="pr-5">Find Nearest Store</li>
             <li className="px-2">
-              <a className="border-solid border-black border-2 rounded-full px-4 py-1 text-center hover:bg-black hover:text-white transition hover:ease-in-out duration-300">
-              Sign In
-              </a>
+              <button className="border-solid border-black border-2 rounded-full px-4 py-1 text-center hover:bg-black hover:text-white transition hover:ease-in-out duration-300">
+                Sign In
+              </button>
             </li>
             <li className="px-2">
-              <button className="border-solid bg-black text-white border-black border-2 rounded-full px-4 py-1 text-center hover:bg-white hover:text-black transition hover:ease-in-out duration-300">
+              <Link to="/signup">
+              <button className="border-solid border-black border-2 rounded-full px-4 py-1 text-center hover:bg-black hover:text-white transition hover:ease-in-out duration-300">
                 Register
               </button>
+              </Link>
             </li>
           </ul>
         </div>
