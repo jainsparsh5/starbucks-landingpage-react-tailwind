@@ -18,7 +18,7 @@ function NavBar() {
         </div>
         <div className="hidden lg:inline-flex">
           <ul className="flex flex-row font-bold text-sm items-center">
-            <li className="px-1">✪</li>
+            <li className="px-2"><i class="fa-solid fa-location-dot"></i></li>
             <li className="pr-5">Find Nearest Store</li>
             <li className="px-2">
               <button className="border-solid border-black border-2 rounded-full px-4 py-1 text-center hover:bg-black hover:text-white transition hover:ease-in-out duration-300">
