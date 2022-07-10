@@ -7,7 +7,8 @@ module.exports = {
         sm: ["16px"],
       },
       colors: {
-        starGreen: "#D4E9E2",    
+        starGreen: "#D4E9E2",  
+        darkGreen: "#1E3932"  
       },
     },
   },
